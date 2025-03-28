@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav className={classes.navbar}>
       <Button
-        value={<Icon alt={"navbar"} path={"/src/assets/icons/Hamburger.svg"} />}
+        value={<Icon alt={"navbar"} path={"assets/icons/Hamburger.svg"} />}
         onClick={toggleMenu}
         className={classes["menu-toggle"]}
         ariaLabel="Toggle navigation"
