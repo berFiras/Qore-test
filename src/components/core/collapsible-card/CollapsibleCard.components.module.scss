@@ -1,0 +1,74 @@
+.card {
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--primary-text-color);
+  width: 1024;
+  height: 46;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-bottom-width: 1px;
+}
+
+.title {
+  font-weight: 400px;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon {
+  width: 24;
+  height: 24;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contentTitle {
+  font-family: var(--primary-font-family);
+  font-weight: 600px;
+  font-size: 32px;
+  line-height: 112.99999999999999%;
+  letter-spacing: 0%;
+  width: 576px;
+  height: 36px;
+  margin: 0px;
+}
+
+.contentImage {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.description {
+  margin: 0px;
+  padding: 0px;
+  font-family: var(--primary-font-family);
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  width: 576px;
+  height: 60px;
+}

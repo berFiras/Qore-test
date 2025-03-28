@@ -1,4 +1,4 @@
-import StoriesMockType from "../types/types/StoriyType.type";
+import StoriesMockType from "../types/types/StoryType.type";
 
 const StoriesMock: StoriesMockType[] = [
   {
