@@ -20,13 +20,13 @@ const CollapsibleCard = ({
     return isOpen ? (
       <Icon
         alt={"Close"}
-        path={"/src/assets/icons/Close.svg"}
+        path={"assets/icons/Close.svg"}
         className={styles.icon}
       />
     ) : (
       <Icon
         alt={"Open"}
-        path={"/src/assets/icons/Open.svg"}
+        path={"assets/icons/Open.svg"}
         className={styles.icon}
       />
     );

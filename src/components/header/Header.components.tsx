@@ -9,7 +9,7 @@ const Header = () => {
         <div className={classes["header-left"]}>
           <div className={classes["header-logo"]}>
             <Icon
-              path="/src/assets/icons/HeaderIcon.svg"
+              path="assets/icons/HeaderIcon.svg"
               alt="Logo"
               className={classes["header-logo-image"]}
             />
@@ -20,7 +20,11 @@ const Header = () => {
         </div>
         <div className={classes["header-right"]}>
           <Navbar />
-          <Icon path="/src/assets/icons/ThemeIcon.svg" alt="Theme" className={classes["theme-icon"]} />
+          <Icon
+            path="assets/icons/ThemeIcon.svg"
+            alt="Theme"
+            className={classes["theme-icon"]}
+          />
         </div>
       </div>
     </header>

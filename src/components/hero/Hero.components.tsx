@@ -19,7 +19,7 @@ const Hero = () => {
           <Button value="Get Started" className={classes["hero-button"]} />
         </div>
         <div className={classes["hero-image"]}>
-          <img src="/src/assets/images/hero.jpeg" alt="hero-image" />
+          <img src="assets/images/hero.jpeg" alt="hero-image" />
         </div>
       </div>
     </div>

@@ -8,38 +8,36 @@ const Footer = () => {
       <div className={classes["footer-content"]}>
         <div className={classes["footer-navigation-items"]}>
           <Icon
-            path="/src/assets/icons/FooterIcon.svg"
+            path="assets/icons/FooterIcon.svg"
             alt="Logo"
             className={classes["footer-logo-image"]}
           />
           <div className={classes["footer-navigation-links"]}>
-            {
-                FooterNavigationItems.map((item) => (
-                  <a
-                    key={item.name}
-                    href={item.url}
-                    className={classes["footer-navigation-link"]}
-                  >
-                    {item.name}
-                  </a>
-                ))
-            }
+            {FooterNavigationItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.url}
+                className={classes["footer-navigation-link"]}
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
         </div>
         <div className={classes["footer-icons"]}>
           <Icon
             alt="Instagram"
-            path="/src/assets/icons/Facebook.svg"
+            path="assets/icons/Facebook.svg"
             className={classes.icon}
           />
           <Icon
             alt="Facebook"
-            path="/src/assets/icons/Instagram.svg"
+            path="assets/icons/Instagram.svg"
             className={classes.icon}
           />
           <Icon
             alt="YouTube"
-            path="src/assets/icons/LinkedIn.svg"
+            path="assets/icons/LinkedIn.svg"
             className={classes.icon}
           />
         </div>
