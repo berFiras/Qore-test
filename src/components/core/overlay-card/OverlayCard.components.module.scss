@@ -1,0 +1,76 @@
+.card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  width: 420px;
+  height: auto;
+  margin: 24px 0;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f1ece1;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  width: 400px;
+  height: 260px;
+  gap: 8px;
+  padding: 24px;
+}
+
+.title {
+  font-family: var(--primary-font-family);
+  font-weight: 600px;
+  font-size: 32px;
+  line-height: 112.99999999999999%;
+  letter-spacing: 0%;
+  width: 576px;
+  height: 36px;
+  margin: 0px;
+}
+
+.description {
+  width: 240px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: var(--secondary-text-color);
+}
+
+.button {
+  color: var(--primary-text-color);
+  background-color: var(--button-bg-color);
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 110px;
+  height: 40px;
+  gap: 8px;
+  padding-top: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  padding-left: 12px;
+  border-radius: 4px;
+}

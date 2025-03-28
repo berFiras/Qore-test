@@ -7,25 +7,42 @@ interface StoryProps {
   title: string;
   description: string;
   imageUrl: string;
+  titleStyle?: string;
+  buttonValue?: string;
+  imageStyle?: string;
+  descriptionStyle?: string;
 }
 
 const Story = (props: StoryProps) => {
+  const {
+    title,
+    description,
+    imageUrl,
+    buttonValue,
+    titleStyle,
+    imageStyle,
+    descriptionStyle,
+  } = props;
   const isSmallScreen = useScreenSize(768);
 
-  const { title, description, imageUrl } = props;
   return !isSmallScreen ? (
     <div className={classes.story}>
-      <div className={classes["story-image"]}>
+      <div className={imageStyle ?? classes["story-image"]}>
         <img
           src={imageUrl}
           alt="Story-image"
-          className={classes["story-image"]}
+          className={imageStyle ?? classes["story-image"]}
         />
       </div>
       <div className={classes["story-details"]}>
-        <Title text={title} className={classes["story-title"]} />
-        <p className={classes["story-description"]}>{description}</p>
-        <Button value="Read more" className={classes["story-button"]} />
+        <Title text={title} className={titleStyle ?? classes["story-title"]} />
+        <p className={descriptionStyle ?? classes["story-description"]}>
+          {description}
+        </p>
+        <Button
+          value={buttonValue ?? "Read more"}
+          className={classes["story-button"]}
+        />
       </div>
     </div>
   ) : (
