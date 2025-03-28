@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
   height: auto;
   padding-top: 80px;
   padding-right: 24px;
@@ -36,7 +37,7 @@
 
 // small screen
 
-.featured-option-container-small{
+.featured-option-container-small {
   width: 440px;
   height: auto;
   max-height: auto;

@@ -3,12 +3,7 @@ import styles from "./CollapsibleCard.components.module.scss";
 import Icon from "../icon/Icon.components";
 import Button from "../button/Button.components";
 import Story from "../story/Story.components";
-
-interface CollapsibleCardProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-}
+import CollapsibleCardProps from "../../../types/prop-types/CollapsibleCardProps";
 
 const CollapsibleCard = ({
   title,

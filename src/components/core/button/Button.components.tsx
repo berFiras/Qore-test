@@ -1,13 +1,4 @@
-import React, { ReactNode } from "react";
-
-interface ButtonProps {
-  value: string | ReactNode;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
-  className?: string;
-  ariaLabel?: string;
-  type?: "button" | "submit" | "reset";
-  disabled?: boolean;
-}
+import ButtonProps from "../../../types/prop-types/ButtonProps";
 
 const Button = ({
   value,
