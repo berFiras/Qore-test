@@ -1,17 +1,8 @@
 import useScreenSize from "../../../hooks/use-screen-size/useScreenSize.hooks";
+import StoryProps from "../../../types/prop-types/StoryProps";
 import Button from "../button/Button.components";
 import Title from "../title/Title.components";
 import classes from "./Story.components.module.scss";
-
-interface StoryProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-  titleStyle?: string;
-  buttonValue?: string;
-  imageStyle?: string;
-  descriptionStyle?: string;
-}
 
 const Story = (props: StoryProps) => {
   const {

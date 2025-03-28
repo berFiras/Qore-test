@@ -1,12 +1,6 @@
-import React from "react";
+import IconProps from "../../../types/prop-types/IconProps";
 
-interface IconProps {
-  alt: string;
-  path: string;
-  className?: string;
-}
-
-const Icon: React.FC<IconProps> = ({ alt, path, className }) => {
+const Icon = ({ alt, path, className }: IconProps) => {
   return <img src={path} alt={alt} className={className} />;
 };
 

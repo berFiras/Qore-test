@@ -1,12 +1,7 @@
+import OverlayCardProps from "../../../types/prop-types/OverlayCardProps";
 import Button from "../button/Button.components";
 import Title from "../title/Title.components";
 import styles from "./OverlayCard.components.module.scss";
-
-interface OverlayCardProps {
-  title: string;
-  description: string;
-  backgroundImage: string;
-}
 
 const OverlayCard = ({
   title,
