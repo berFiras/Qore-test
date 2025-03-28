@@ -1,5 +1,7 @@
+import Home from "./pages/home/Home.components";
+
 function App() {
-  return <img alt="logo" src="/logo.svg" />;
+  return <Home />;
 }
 
 export default App;

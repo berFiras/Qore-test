@@ -1,17 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Gluten:wght@400;700&family=Inter:wght@400;700&display=swap");
+
 :root {
   /* Background Colors */
   --primary-bg-color: #ffffff;
-  --secondary-bg-color: #6c757d;
-  --dark-bg-color: #f8f9fa;
+  --secondary-bg-color: #f1ece1;
+  --dark-bg-color: #1c1812;
 
   /* Text Colors */
   --primary-text-color: #1c1812;
   --secondary-text-color: #65625e;
+  --primary-light-text-color: #f7f7f6;
   --secodary-light-text-color: #aeadaa;
 
   /* Typography */
-  --primary-font-family: "Gluten";
-  --secondary-font-family: "Inter";
+  --primary-font-family: "Inter";
+  --secondary-font-family: "Gluten";
 }
 
 /* global styles */

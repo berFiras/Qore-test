@@ -1,11 +1,51 @@
+import FooterNavigationItems from "../../utils/FooterNavigationItems";
+import Icon from "../core/icon/Icon.components";
+import classes from "./Footer.components.module.scss";
+
 const Footer = () => {
   return (
-    <footer style={{ padding: "1rem", backgroundColor: "#f1f1f1", textAlign: "center" }}>
-      <div>
-        <a href="/about">About</a> | <a href="/contact">Contact</a> | <a href="/privacy">Privacy Policy</a>
+    <footer className={classes.footer}>
+      <div className={classes["footer-content"]}>
+        <div className={classes["footer-navigation-items"]}>
+          <Icon
+            path="/src/assets/icons/FooterIcon.svg"
+            alt="Logo"
+            className={classes["footer-logo-image"]}
+          />
+          <div className={classes["footer-navigation-links"]}>
+            {
+                FooterNavigationItems.map((item) => (
+                  <a
+                    key={item.name}
+                    href={item.url}
+                    className={classes["footer-navigation-link"]}
+                  >
+                    {item.name}
+                  </a>
+                ))
+            }
+          </div>
+        </div>
+        <div className={classes["footer-icons"]}>
+          <Icon
+            alt="Instagram"
+            path="/src/assets/icons/Facebook.svg"
+            className={classes.icon}
+          />
+          <Icon
+            alt="Facebook"
+            path="/src/assets/icons/Instagram.svg"
+            className={classes.icon}
+          />
+          <Icon
+            alt="YouTube"
+            path="src/assets/icons/LinkedIn.svg"
+            className={classes.icon}
+          />
+        </div>
       </div>
-      <div style={{ marginTop: "0.5rem" }}>
-        &copy; {new Date().getFullYear()} Your Company. All rights reserved.
+      <div className={classes["footer-copyright"]}>
+        &copy; 2024 Central Texas Fly Fishing All Rights Reserved.
       </div>
     </footer>
   );
