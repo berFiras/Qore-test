@@ -83,7 +83,8 @@
   @media (max-width: 768px) {
     .hero {
       padding: 0; // Remove padding
-      background-color: red;
+      margin: 0; // Remove margin
+      width: 100%;
     }
 
     .hero-content {
@@ -106,10 +107,10 @@
 
     .hero-details {
       justify-content: center;
-      align-items: flex-start; 
+      align-items: flex-start;
       width: 100%;
       height: auto;
-      padding: 16px 24px; 
+      padding: 16px 24px;
     }
 
     .hero-title {
