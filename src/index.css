@@ -6,7 +6,8 @@
   --secondary-bg-color: #f1ece1;
   --dark-bg-color: #1c1812;
   --secondary-dark-bg-color: #514432;
-  
+  --button-bg-color: #dfdedd;
+
   /* Text Colors */
   --primary-text-color: #1c1812;
   --secondary-text-color: #65625e;
@@ -25,4 +26,9 @@ body {
   background-color: var(--primary-bg-color);
   font-family: var(--primary-font-family);
   letter-spacing: 0%;
+
+  button {
+    outline: none;
+    border: none;
+  }
 }
