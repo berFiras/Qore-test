@@ -1,10 +1,137 @@
 .hero {
-  width: 1440;
-  height: 466;
-  gap: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 80px;
   padding-right: 24px;
   padding-bottom: 80px;
   padding-left: 24px;
-  background-color: red;
+
+  .hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1024px;
+    height: 306px;
+    max-width: 1024px;
+    gap: 24px;
+  }
+
+  .hero-details {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    height: 306px;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .hero-title {
+    margin: 0px;
+    width: 555px;
+    height: 126px;
+
+    font-weight: 600px;
+    font-size: 56px;
+    line-height: 112.99999999999999%;
+    letter-spacing: 0%;
+  }
+
+  .hero-description {
+    margin: 0px;
+    width: 600px;
+    height: 60px;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: var(--secondary-text-color);
+  }
+
+  .hero-button {
+    width: 111px;
+    height: 40px;
+    border-radius: 4px;
+    gap: 8px;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: var(--primary-light-text-color);
+    background-color: var(--secondary-dark-bg-color);
+  }
+
+  .hero-image {
+    width: 400px;
+    height: 300px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 0; // Remove padding
+      background-color: red;
+    }
+
+    .hero-content {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      gap: 16px;
+    }
+
+    .hero-image {
+      width: 440px;
+      height: 500px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .hero-details {
+      justify-content: center;
+      align-items: flex-start; 
+      width: 100%;
+      height: auto;
+      padding: 16px 24px; 
+    }
+
+    .hero-title {
+      width: 392px;
+      height: 90px;
+      font-size: 40px;
+      letter-spacing: 0%;
+    }
+
+    .hero-description {
+      width: 392px;
+      height: 90px;
+      font-weight: 400px;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0%;
+    }
+
+    .hero-button {
+      width: auto;
+      height: auto;
+      padding: 8px 16px;
+    }
+  }
 }

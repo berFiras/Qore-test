@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import NavbarItems from "../../utils/NavbarItems";
 import classes from "./Navbar.components.module.scss";
-import Button from "../core/Button/Button.components";
+import Button from "../core/button/Button.components";
 import Icon from "../core/icon/Icon.components";
 
 const Navbar = () => {
